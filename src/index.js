@@ -18,6 +18,8 @@ app.use((req, res, next)=>{
 
 //ROUTES
 app.use(require('./routes/obstacles'));
+app.use(require('./routes/portals'));
+app.use(require('./routes/bricks'));
 
 //Start server
 app.listen(app.get('port'), ()=>{
