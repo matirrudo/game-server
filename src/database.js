@@ -1,10 +1,10 @@
 const mysql = require('mysql');
 
 const mysqlConnection = mysql.createConnection({
-    host:'localhost',
+    host:'168.197.48.12',
     user:'root',
     password:'matias',
-    database:'game-db',
+    database:'game_db',
     multipleStatements:true
 });
 
