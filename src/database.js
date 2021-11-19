@@ -5,6 +5,7 @@ const mysqlConnection = mysql.createConnection({
     user:'root',
     password:'matias',
     database:'game_db',
+    port:3307,
     multipleStatements:true
 });
 
