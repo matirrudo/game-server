@@ -1,10 +1,11 @@
+require('dotenv').config()
 const express = require('express');
 const app = express();
 app.use(express.json());
-
+const PORT = process.env.PORT;
 
 //Settings
-app.set('port', 3000);
+app.set('port', PORT);
 
 
 //CORS  
@@ -24,5 +25,5 @@ app.use(require('./routes/player'));
 
 //Start server
 app.listen(app.get('port'), ()=>{
-    console.log("server on port 3000");
+    console.log(`server on port ${PORT}`);
 });
